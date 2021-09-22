@@ -40,6 +40,8 @@ input {
     padding-bottom: 13px;
     padding-left: 13px;
     min-width: 293px;
+    margin-bottom: 22px;
+    color: #8C9D5A;
 }
 
 input[type=email] {
@@ -48,10 +50,10 @@ input[type=email] {
     margin-bottom: 22px;
 }
 
-input[type=password] {
+input[type=password],
+input[type=text] {
     background: linear-gradient(90.92deg, #DBFF6E 0%, #FDFFB5 72.61%);
     border-radius: 12px;
-    margin-bottom: 32px;
 }
 
 ::placeholder {
@@ -77,6 +79,11 @@ input[type=password] {
     padding-bottom: 13px;
     min-width: 308px;
     cursor: pointer;
+    margin-top: 10px;
+}
+
+.outline {
+    margin-top: 0;
 }
 
 .btn-sumbit {
@@ -102,13 +109,12 @@ input[type=password] {
 
     margin-top: 17px;
     margin-bottom: 17px;
-    margin-right: 8px;
 }
 
 .login-box span::before {
     content: '';
     display: block;
-    width: 63px;
+    width: 64px;
     height: 2px;
     background-color: #C4C4C4;
     border-radius: 1px;
@@ -118,9 +124,29 @@ input[type=password] {
 .login-box span::after {
     content: '';
     display: block;
-    width: 63px;
+    width: 64px;
     height: 2px;
     background-color: #C4C4C4;
     border-radius: 1px;
     margin-left: 8px;
+}
+
+#reg-span::before {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 2px;
+    background-color: #C4C4C4;
+    border-radius: 1px;
+    margin-right: 16px;  
+}
+
+#reg-span::after {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 2px;
+    background-color: #C4C4C4;
+    border-radius: 1px;
+    margin-left: 16px;
 }
