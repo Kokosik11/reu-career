@@ -4,12 +4,14 @@ body {
     font-family: 'Comfortaa', cursive;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .login {
     display: flex;
     justify-content: center;
-    top: 50%;
+    align-items: center;
+    height: 100vh;
 }
 
 .login-box {
@@ -75,15 +77,19 @@ input[type=password] {
     padding-bottom: 13px;
     min-width: 308px;
     cursor: pointer;
-    transition: 0.7s ease;
 }
 
-.outline {
+.btn-sumbit {
+    background: linear-gradient(91.18deg, #FEFFB8 0%, #D8FF68 99.99%);
     border-radius: 12px;
-    border: 2px solid #D8FF68;
-    background: #fff;
+
+    padding: 2px;
 
     margin-bottom: 33px;
+}
+
+.btn-sumbit button {
+    background: #fff;
 }
 
 .login-box span {
